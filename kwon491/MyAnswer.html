@@ -1,0 +1,69 @@
+
+<html>
+<head>
+	<script src="javascript.js"></script>
+</head>
+<body>
+	<p>
+	<input value="" id="doubletext">
+	<input type="button" value="Double" onclick="blankcheck()">
+	<script>
+	function blankcheck(){
+	var checknum=document.getElementById("doubletext").value;
+	if (checknum == ""){
+		alert("Input could not be blank");
+		}
+	else if (isNaN(checknum) == false){
+		alert("Input should be a number");
+		}
+	else{
+		var result = checknum*2
+		document.getElementById("doubletext").innerHTML=(result);
+		};
+	};
+	</script>
+	</p>
+	
+
+	<p>Number1:<input type="text" id="number1"> <p/>
+		<p>Number2:<input type="text" id="number2"> <p/>
+			<p>Number3:<input type="text" id="number3"> <p/>
+				<p>Number4:<input type="text" id="number4"> <p/>
+					<p>Number5:<input type="text" id="number5"> <p/>
+						<p>Number6:<input type="text" id="number6"> <p/>
+							<p>Number7:<input type="text" id="number7"> <p/>
+								<p>Number8:<input type="text" id="number8"> <p/>
+									<p>Divide by:<input type="text" id="divideby"> <p/>
+		<p><input type="button" value="Check" onclick="check()"></p>
+		
+	<script>
+	function check(){
+	var divideby =document.getElementById("divideby").value;
+	if divideby = >0{
+	var number1 = document.getElementById("number1").value;
+		var number2 = document.getElementById("number2").value;
+			var number3 = document.getElementById("number3").value;
+				var number4= document.getElementById("number4").value;
+					var number5 = document.getElementById("number5").value;
+						var number6 = document.getElementById("number6").value;
+							var number7 = document.getElementById("number7").value;
+								var number8 = document.getElementById("number8").value;
+								
+	for i (i=1; i<9; i++){
+	if ((number1%divideby =0) && (number2%divideby =0)  && (number3%divideby =0) && (number4%divideby =0) && (number5%divideby =0) && (number6%divideby =0) && (number7%divideby =0) && (number8%divideby =0)){
+	alert("Each number divided by Division value gets a remainder of 0.");
+	}else{
+	alert("Not all of these numbers divided by Divison value get a remainder of 0.");
+	}
+	}
+
+	}else{
+	alert("Divisor is not positive");
+	}
+	};
+	</script>
+<a href="https://github.com/kwon491/infosys280a2.git">here</a> 
+</body>
+
+
+</html>
