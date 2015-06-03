@@ -2,8 +2,8 @@
 //6a
 	$(document).ready(function(){
      $("button.button1").click(function(){
-          $(#logo1).attr('src', 'turnoff.jpg');
-		            $(#logo2).attr('src', 'turnoff.jpg');
+          $(#logo1).attr('src', 'images/turnoff.jpg');
+		            $(#logo2).attr('src', 'images/turnoff.jpg');
      });
 });
 //6b
