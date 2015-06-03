@@ -1,5 +1,4 @@
 
-
 //6a
 	$(document).ready(function(){
      $("button.button1").click(function(){
@@ -11,9 +10,9 @@
 
 	$(document).ready(function(){
 		$("button.button2").click(function(){
-			$("button.button1").css('color', "green");
-			$("button.button2").css('color', "blue");
-			$("button.button3").css('color', "yellow");
+			$("#button1").css('color', "green");
+			$("#button2").css('color', "blue");
+			$("#button3").css('color', "yellow");
 			$("h1").css('font-family', "verdana,sans-serif");			
 		});
 	});
